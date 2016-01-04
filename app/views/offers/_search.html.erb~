@@ -1,0 +1,8 @@
+ Use commas to separate search terms below 
+<%= form_tag offers_path, :method => 'get' do %>
+  <strong>Descripiton</strong>
+  <%= text_field_tag :description, params[:description] %>(e.g. "Computer Keyboard, USB, Illuminated")<br>
+  <strong>Loaction</strong>
+  <%= text_field_tag :location, params[:location] %>(e.g. "Buenos Aires, Argentina")<br>
+  <%= submit_tag "Search", :name => nil %>
+<% end %>

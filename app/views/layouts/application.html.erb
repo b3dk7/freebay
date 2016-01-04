@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      <%= @title || "freebay" %>
+    </title>
+    <%= stylesheet_link_tag    'application' %>
+    <%= stylesheet_link_tag 'mobile' if device_used == 'iphone' || device_used == 'androidphone' %>
+    <%= stylesheet_link_tag device_used %>
+
+    <%= csrf_meta_tags %>
+    <%= favicon_link_tag '/freebay_32.ico'%>
+    
+    <meta name='description'
+      content='<%= yield_meta_tag(:description, 'Online noticeboard listing physical goods as well as service. Users are able to improve the site by maintaining each others offers - this leads to an improved site quality and overall user experience. Freebay is focused on unconditional gifting instead of commercial activity') %>' />
+<meta name='keywords'
+      content='<%= yield_meta_tag(:keywords, 'recycling,gifting,noticeboard,billboard') %>' />
+    
+
+
+
+    <!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+	</script>
+	<![endif]-->
+
+  </head>
+  <body data-no-turbolink="true" class="container">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <header>
+      <nav>
+	<%= link_to "freebay", root_path, id:"logo"%>
+	<%= link_to ("create" + (device_used == "desktop" ? " offer" : "")), new_offer_path, class:"circle navcreate" %>
+	<%= link_to ("search" + (device_used == "desktop" ? " offers" : "")), offers_path, class:"circle" %>
+      </nav>
+
+    </header>
+     
+    <%= yield %>
+    
+
+
+    <footer>
+      <nav>
+	<%= link_to "about", about_path, class:"circle" %>
+	<%= link_to "contact", contact_path, class:"circle" %>
+	<%= link_to "support", donate_path, class:"circle" %>
+      </nav>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    </footer>
+  
+  <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//46.101.248.221/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//46.101.248.221/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+  </body>
+</html>

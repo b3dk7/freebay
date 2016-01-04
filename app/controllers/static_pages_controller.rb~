@@ -1,0 +1,13 @@
+class StaticPagesController < ApplicationController
+  def art
+  end
+
+  def donate
+  end
+  def about
+  end
+  def contact
+  end
+  def how_to
+  end
+end

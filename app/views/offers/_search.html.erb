@@ -1,0 +1,19 @@
+
+
+<%= form_tag offers_path, :method => 'get' do %>
+  <p>
+    <span class="search_label">description</span><br>
+    <%= text_field_tag :description, params[:description], class:"search" %>
+  </p>
+  <p>
+    <span class="search_label">location</span><br>
+    <%= text_field_tag :location, params[:location], class:"search" %>
+  </p>
+  <p id="idnumber">
+    
+  </p>
+  <%= submit_tag "search", :name => nil, class:"search" %>
+<% end %>
+
+
+

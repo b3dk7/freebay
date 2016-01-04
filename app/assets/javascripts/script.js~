@@ -1,0 +1,4 @@
+function testResults (form) {
+    var TestVar = form.inputbox.value;
+    window.open("http://localhost:3000/offers/"+TestVar)
+}

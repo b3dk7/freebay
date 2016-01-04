@@ -1,0 +1,52 @@
+
+<%= form_for :offer, url: offers_path do |f| %>
+  
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </p>
+
+  <p>
+    <%= f.label :tags %> (comma separated - e.g. "clothes, winter, sweater, christmas, large" or "flight, munich, germany, barcelona, spain")<br>
+    <%= f.text_area :tags %>
+  </p>
+ 
+
+
+  <p>
+    <%= f.label :image %> URL <br>
+    <%= f.text_field :image %>
+  </p>
+
+  <p>
+    <%= f.label :contact_information %> (email or telephone number)<br>
+    <%= f.text_area :contact_information %>
+  </p>
+
+  <u>Location information of the offer</u> 
+  <p>
+    <%= f.label :country %><br>
+    <%= f.text_field :country %>
+  </p>
+  <p>
+    <%= f.label :state %><br>
+    <%= f.text_field :state %>
+  </p>
+  <p>
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </p>
+  <p>
+    <%= f.label :city_quater %><br>
+    <%= f.text_field :city_quater %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+

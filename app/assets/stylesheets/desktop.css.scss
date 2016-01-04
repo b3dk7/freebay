@@ -1,0 +1,21 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+nav {
+    margin-top: 0.5em;
+	font-size: 1.8em;
+}
+footer {
+    margin-top: 5em;
+
+    
+}
+img.offer {
+	max-height: 200px;
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}

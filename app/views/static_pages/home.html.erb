@@ -1,0 +1,14 @@
+<h1>welcome to freebay - the first online noticeboard fully controlled by the community</h1>
+<h2>what makes freebay unique is that you can change and delete other peoples offers - just like on a real noticeboar! just click on an offer below and click on "edit/delete"</h2>
+<h2><%= link_to "create offer", new_offer_path, class:"btn btn-primary btn-lg" %></h2>
+<h2 class="search">search offers</h2>
+<%= render 'offers/search' %>
+<h2>latest offers</h2>
+<% offers = Offer.all %>
+<div class="container">
+  <% offers=sort_and_paginate_home(offers).each do |offer| %>
+    <%= render 'offers/index_filler', offer: offer %>
+  <% end %>
+</div>
+
+<%= will_paginate offers %>

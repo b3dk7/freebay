@@ -1,0 +1,15 @@
+<h1>Listing offers</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Location</th>
+  </tr>
+ 
+  <% @offers.each do |offer| %>
+    <tr>
+      <td><%= offer.title %></td>
+      <td><%= offer.city %></td>
+    </tr>
+  <% end %>
+</table>

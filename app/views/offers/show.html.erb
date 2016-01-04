@@ -1,0 +1,50 @@
+<% @title = (remove_commas @offer.tag_list) + " in  " + (remove_commas @offer.location_list) + " | freebay" %>
+
+
+<% meta_tag :description, ((remove_commas @offer.tag_list)+" in "+(remove_commas @offer.location_list) + " | freebay promotes gifting, recycling and helping the less fortunate").gsub('  ',' ') %>
+<% meta_tag :keywords, ((remove_commas @offer.tag_list)+" "+(remove_commas @offer.location_list)).gsub(' ',',').gsub(',,',',')[1..-1] %>
+
+
+<span id="show_offer">
+<h1>
+  <%= remove_commas @offer.tag_list %>
+</h1>
+<p>
+  <strong>Offer ID:</strong>
+  <%= @offer.id %> - 
+  <%= link_to "Edit/Delete", edit_offer_path(@offer), id:"edit" %>
+</p>
+<p>
+  <strong>Location:</strong>
+  <%= remove_commas @offer.location_list %>
+</p>
+<p>
+  <strong>Additional Information:</strong>
+  <%= @offer.description %>
+</p>
+
+
+
+
+ 
+<p>
+  <strong>Contact information:</strong>
+  <%= mail_to(email_helper(@offer.contact_information)) %>
+  <%= remaining_info(@offer.contact_information) %>
+</p>
+<p>
+  <strong>Last update:</strong>
+  <%= @offer.updated_at %>
+</p>
+<p>
+  <strong>Expiration:</strong>
+  <%= @offer.expiration %>
+</p>
+</span>
+
+<div class="fb-share-button" data-href="http://freebay.fr/offers/<%= @offer.id %>" data-layout="button"></div>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="benedikt_boehm">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<div><%= link_to(image_tag(@offer.image.url(:big), id:"showimage"), @offer.image.url(:original)) if @offer.image_file_name != nil %></div>

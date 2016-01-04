@@ -1,0 +1,54 @@
+<% @title =  "search offers | freebay" %>
+<%= render 'search' %>
+
+<button class="idsearch" onclick="enterid()">search offer via ID</button>
+
+
+<div class="listing container">
+
+
+<% if params[:id].present? %>
+   
+   <span class="norec"><%= @offers.exists?(params[:id]) ? (render 'index_filler', offer: @offers.find(params[:id])) : "no records found"  %></span>
+<% else %>
+
+
+  <% if params[:description].present? && params[:location].present?%>
+    <% @offers=sort_and_paginate(@offers.tagged_with(params[:description], :on => :tags).tagged_with(params[:location], :on => :locations)).each do |offer| %>
+      <%= render 'index_filler', offer: offer %>
+    <% end %>
+    <%= no_rec(@offers) %>
+  
+<% elsif params[:description].present? %>
+    <% @offers=sort_and_paginate(@offers.tagged_with(params[:description], :on => :tags)).each do |offer| %>
+      <%= render 'index_filler', offer: offer %>
+    <% end %>
+    <%= no_rec(@offers) %>
+<% elsif params[:location].present? %>
+    <% @offers=sort_and_paginate(@offers.tagged_with(params[:location], :on => :locations)).each do |offer| %>
+      <%= render 'index_filler', offer: offer %>
+    <% end %>
+    <%= no_rec(@offers) %>
+
+
+
+<% else %>
+    <% @offers=sort_and_paginate(@offers).each do |offer| %>
+      
+      <%= render 'index_filler', offer: offer %>
+    <% end %>
+    <%= no_rec(@offers) %>
+  <% end %><% end %>
+
+
+
+
+</div>
+
+
+
+
+<% if params[:id].blank? %>
+  <%= will_paginate @offers %>
+<% end %>
+

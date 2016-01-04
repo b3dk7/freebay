@@ -1,0 +1,76 @@
+
+<%= form_for @offer do |f| %>
+  <% if @offer.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@offer.errors.count, "error") %> prohibited this offer from being saved:</h2>
+ 
+    <ul>
+    <% @offer.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+  <p>
+    <%= f.label :description %> (*required) - <a class="tip" onclick="description_tip()">tip</a><br>
+    <%= f.text_area :tag_list %>
+  </p>
+
+  <p>
+    <%= f.label :location %> - <a class="tip" onclick="location_tip()">tip</a><br>
+    <%= f.text_area :location_list %>
+  </p>
+  <p>
+    <%= f.label :additional_information %> - <a class="tip" onclick="add_info_tip()">tip</a><br>
+    <%= f.text_area :description %>
+  </p>
+
+
+ 
+
+
+  <p>
+    <%= f.label :image %><br>
+    <%= f.file_field :image %>
+  </p>
+
+  <p>
+    <%= f.label :contact_information %> - <a class="tip" onclick="sectip()">tip</a><br>
+    <%= f.text_area :contact_information %>
+  </p>
+
+
+
+
+  <p>
+    <%= f.label :expiration %> (YYYY-MM-DD)<br>
+    <%= f.date_field :expiration %>
+  </p>
+  <p>
+    <label>Security question</label> (*required) - <a class="tip" onclick="captchawhy()">tip</a><br>
+<%= textcaptcha_fields(f) do %>
+  
+    <%= f.label :textcaptcha_answer, @offer.textcaptcha_question, class: "captcha" %><br/>
+    <%= f.text_field :textcaptcha_answer, :value => '' %>
+  
+<% end %>
+  </p>
+  <p>
+    <%= f.submit id: "create_offer_button" %>
+  </p>
+<% end %>
+
+
+
+ 
+<script type="text/javascript">
+function description_tip() {
+    alert("please add as many descriptive keywords about your offer as possible and ensure you're spelling in correct")
+}
+function location_tip() {
+    alert("Spelling and non-ambiguity are very important here. A good example would be - 'Notting Hill, London, England'. Here we know exactly which 'Notting Hill' you mean")
+}
+function add_info_tip() {
+    alert("Text in this field can not be searched for by others, so please just include information that does not describe the offer itself, e.g. 'pick up only, no delivery'")
+}
+</script>

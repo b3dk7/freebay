@@ -1,0 +1,1 @@
+<% Offer.where(expiration: Date.new(0)..Date.today-1).destroy_all %>

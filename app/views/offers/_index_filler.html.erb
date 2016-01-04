@@ -1,0 +1,8 @@
+<div class="offer col-xs-6 col-sm-4">
+  <a href=<%= offer_path(offer) %>>
+    <div class="image"><%=  image_tag(offer.image.url(:big), class:"offer")  %></div>
+    <div class="description">D: <%= remove_commas offer.tag_list %></div>
+    <div class="location"><%= offer.location_list.length > 0 ? "L: "+remove_commas(offer.location_list) : nil %></div>
+   </a>
+</div>
+

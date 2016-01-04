@@ -1,0 +1,30 @@
+<p>
+  <strong>Title:</strong>
+  <%= @offer.title %>
+</p>
+ 
+<p>
+  <strong>Description:</strong>
+  <%= @offer.description %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @offer.tags %>
+</p>
+
+
+<p>
+  <strong>Location:</strong>
+  <%= @offer.city + ", " + @offer.country + " (" + @offer.extra_location_information + ")" %>
+</p>
+
+ 
+<p>
+  <strong>Contact Information:</strong>
+  <%= @offer.contact_information %>
+</p>
+
+<p>
+  
+
