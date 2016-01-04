@@ -1,0 +1,55 @@
+a {
+    color: white;
+}
+
+body {
+    background-color: black;
+    color: white;
+} 
+
+div.offer {
+    margin-left: auto;
+    margin-right: auto;
+    width:99%;
+
+    
+}
+
+#showimage {
+    width:99%;
+
+}
+
+#offer_image {
+    height: 5em; 	     	     
+}
+
+textarea {
+    width:99%;
+    height:7em;
+}
+input {
+    width:99%;
+    height:2em;
+}
+
+footer {
+    margin-top: 2em;
+
+    
+}
+
+.pagination {
+    width:99%;
+
+}
+
+nav {
+    font-size: 1.4em;
+}
+
+
+#pp{
+    width:100%;
+    height: auto;
+}

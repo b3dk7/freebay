@@ -1,0 +1,105 @@
+/* line 1, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+.circle {
+  border: 2px solid #D3D3D3;
+}
+
+/* line 4, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+img.offer {
+  width: 100%;
+  height: auto;
+}
+
+/* line 8, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+#delete_button {
+  color: #CD5C5C;
+  margin-bottom: 2em;
+}
+
+/* line 14, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+.norec, .tip, #show_offer, .staticpages {
+  font-size: 2em;
+}
+
+/* line 17, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+a {
+  color: white;
+}
+
+/* line 20, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+body {
+  background-color: black;
+  color: white;
+}
+
+/* line 24, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+div.offer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 99%;
+}
+
+/* line 29, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+#showimage {
+  width: 99%;
+}
+
+/* line 32, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+textarea {
+  width: 99%;
+  font-size: 3em;
+}
+
+/* line 36, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+input, #delete_button {
+  width: 99%;
+  font-size: 3em;
+}
+
+/* line 40, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+footer {
+  margin-top: 2em;
+}
+
+/* line 43, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+.pagination {
+  width: 99%;
+}
+
+/* line 46, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+#pp {
+  width: 50%;
+  height: auto;
+}
+
+/* line 50, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+nav {
+  font-size: 4em;
+}
+
+/* line 54, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+div.offer {
+  font-size: 1.5em;
+}
+
+/* line 57, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+a {
+  text-decoration: none;
+  color: #D3D3D3;
+}
+
+/* line 61, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+input.search, label, .search_label {
+  font-size: 3em;
+}
+
+/* line 64, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+.captcha, #edit {
+  font-size: 2em;
+  color: #BCED91;
+}
+
+/* line 68, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+#create_offer_button {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}

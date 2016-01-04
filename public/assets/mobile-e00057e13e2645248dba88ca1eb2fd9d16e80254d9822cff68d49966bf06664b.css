@@ -1,0 +1,138 @@
+/* line 1, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+.fb-share-button, .twitter-share-buton {
+  width: 100px;
+  height: 50px;
+}
+
+/* line 5, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+.idsearch {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 9, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+.btn-primary {
+  border: 4px solid #D3D3D3;
+  border-radius: 10px;
+  padding: 2px;
+  font-size: 4em;
+}
+
+/* line 15, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+h2.search {
+  font-size: 4em;
+}
+
+/* line 18, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+.navcreate {
+  margin-right: 0.7em;
+}
+
+/* line 21, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+.circle {
+  border: 2px solid #D3D3D3;
+}
+
+/* line 25, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+img.offer {
+  max-height: 400px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 33, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+#delete_button {
+  color: #CD5C5C;
+  margin-bottom: 2em;
+}
+
+/* line 39, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+.norec, .tip, #show_offer, .staticpages {
+  font-size: 2em;
+}
+
+/* line 42, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+a {
+  color: white;
+}
+
+/* line 45, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+body {
+  background-color: black;
+  color: white;
+}
+
+/* line 49, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+div.offer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 99%;
+}
+
+/* line 54, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+#showimage, .idsearch {
+  width: 99%;
+}
+
+/* line 57, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+textarea {
+  width: 99%;
+  font-size: 3em;
+}
+
+/* line 61, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+input, #delete_button {
+  width: 99%;
+  font-size: 3em;
+}
+
+/* line 65, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+footer {
+  margin-top: 2em;
+}
+
+/* line 68, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+.pagination {
+  width: 99%;
+}
+
+/* line 71, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+#pp {
+  width: 50%;
+  height: auto;
+}
+
+/* line 75, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+nav {
+  font-size: 4em;
+}
+
+/* line 79, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+div.offer {
+  font-size: 1.5em;
+}
+
+/* line 82, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+a {
+  text-decoration: none;
+  color: #D3D3D3;
+}
+
+/* line 86, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+input.search, label, .search_label, .idsearch {
+  font-size: 3em;
+}
+
+/* line 89, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+.captcha, #edit {
+  font-size: 2em;
+  color: #BCED91;
+}
+
+/* line 93, /home/snoop/freebay/app/assets/stylesheets/mobile.css.scss */
+#create_offer_button {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}

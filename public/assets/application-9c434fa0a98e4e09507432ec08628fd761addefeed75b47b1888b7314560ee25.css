@@ -1,0 +1,53 @@
+/* line 4, /home/snoop/freebay/app/assets/stylesheets/custom.css.scss */
+body {
+  background-color: black;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+
+/* line 11, /home/snoop/freebay/app/assets/stylesheets/custom.css.scss */
+a {
+  color: white;
+}
+
+/* line 15, /home/snoop/freebay/app/assets/stylesheets/custom.css.scss */
+div.offer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 99%;
+  border-style: double;
+  border-width: 5px;
+  margin-bottom: 10px;
+}
+
+/* line 24, /home/snoop/freebay/app/assets/stylesheets/custom.css.scss */
+img.offer {
+  width: 100%;
+  height: auto;
+}
+
+/* line 30, /home/snoop/freebay/app/assets/stylesheets/custom.css.scss */
+#offer_image {
+  height: 5em;
+}
+
+/* line 34, /home/snoop/freebay/app/assets/stylesheets/custom.css.scss */
+footer {
+  margin-top: 10px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
