@@ -14,6 +14,3 @@ vision
 ------
 The vision of freebay is to promote resource sharing and supporting those in need. 
 
-support
---------
-BTC address: 1JKsTRYxgVr1cyzxDEiRiCUYmrEDueGcPe
